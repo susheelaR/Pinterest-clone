@@ -85,3 +85,28 @@ nav.navbar .nav-controls .nav-buttons .login {
     background-color: #E60023;
     color: #fff;
 }
+
+section {
+    outline: solid 1px red;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.images {
+padding-top: 60px;
+}
+
+section.hero {
+    background-color: #FFFD92;
+}
+
+section.search-ideas {
+    background-color: #DAFFF6;
+}
+
+section.save-ideas {
+    background-color: #FFE2EB;
+}
