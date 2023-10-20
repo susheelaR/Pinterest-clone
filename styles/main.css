@@ -102,8 +102,8 @@ nav.navbar .nav-controls .nav-buttons .signup {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1500px;
+    /* margin: 0 auto; */
 }
 
 .container-fluid {
@@ -112,9 +112,12 @@ nav.navbar .nav-controls .nav-buttons .signup {
 
 section {
     height: 100vh;
-    display: flex;
+}
+
+section.images {
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 section.images {
@@ -154,15 +157,22 @@ section.images .images-footer::after {
 }
 
 section.hero {
-    background-color: #FFFD92;
+    background-color: #FFE2EB;
 }
 
 section.search-ideas {
-    background-color: #DAFFF6;
+    background-color: #FFFD92;
+   
+}
+
+section .container-fluid .search {
+    background-color: #FFFD92;
+    display: flex;
+    flex-direction: row;
 }
 
 section.save-ideas {
-    background-color: #FFE2EB;
+    background-color: #DAFFF6;
 }
 
 section.images .images-title {
@@ -298,16 +308,80 @@ section.images .carousel-slides .carousel-slide .columns .column img {
     transition-delay: 1.2s;
 }
 
-/* section.images .carousel .columns {
-    display: grid;
-    grid-template-columns: repeat(7, 252px);
-    visibility: hidden;
-    pointer-events: none;
-    max-height: 0px;
+section.search-ideas .search {
+    display: flex;
+    flex-direction: row;
 }
 
-section.images .carousel .columns.active {
-    max-height: unset;
-    visibility: visible;
-    pointer-events: auto;
-} */
+section.search-ideas .search .search-image {
+    float: left;
+    width: 50%;
+    left: 50px;
+    /* position: absolute; */
+}
+
+section.search-ideas .search .search-image .image1 img{
+    position: absolute;
+    width: 178px;
+    height: 218px;
+    left: 370px;
+}
+
+section.search-ideas .search .search-image .image2 img{
+    position: absolute;
+    width: 204px;
+    height: 285;
+    top: 800px;
+    left: 10px;
+}
+
+section.search-ideas .search .search-image .image3 img{
+    position: absolute;
+    width: 164px;
+    height: 258;
+    left: 400px;
+    top: 1000px;
+}
+
+section.search-ideas .search .search-image .image4 img{
+    position: absolute;
+    width: 298px;
+    height: 456;
+    left: 160px;
+    top: 740px;
+}
+
+section.search-ideas .search .search-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #C31952;
+    padding-top: 180px;
+    padding-left: 50px;
+}
+
+section.search-ideas .search .search-text .main {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+section.search-ideas .search .search-text .body-text {
+    font-size: 24px;
+    max-width: 400px;
+    text-align: center;
+}
+
+section.search-ideas .search .search-text .explore-button {
+    min-height: 30px;
+    min-width: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C31952;
+    color: #FFFD92;
+    border-radius: 50px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 7px;
+}
