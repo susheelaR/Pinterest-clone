@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 html,
 body {
     margin: 0;
@@ -7,7 +8,7 @@ body {
 
 nav.navbar {
     width: auto;
-    height: 50px;
+    height: 45px;
     /* padding: 10px 20px; */
 
     display: flex;
@@ -16,7 +17,7 @@ nav.navbar {
     justify-content: space-between;
     padding: 18px 16px;
     position: fixed;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     background-color: #fff;
 }
 
@@ -25,6 +26,7 @@ nav.navbar .brand {
     gap: 5px;
     flex-direction: row;
     align-items: center;
+    padding-left: 13px;
 }
 
 nav.navbar .brand .logo path{
@@ -35,21 +37,22 @@ nav.navbar .brand .logo-name {
     color: #CC0000;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
-
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 nav.navbar .nav-controls {
     display: flex;
     gap: 20px;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     text-align: left;
     font-size: 16px;
 }
 
 nav.navbar .nav-controls .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     flex-direction: row;
     align-items: center;
     margin-right: 26px;
@@ -58,7 +61,7 @@ nav.navbar .nav-controls .nav-links {
 nav.navbar .nav-controls .nav-links .nav-link {
     color: #333;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -76,14 +79,23 @@ nav.navbar .nav-controls .nav-buttons {
 nav.navbar .nav-controls .nav-buttons .nav-button {
     background-color: #EFEFEF;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 24px;
     text-transform: capitalize;
     cursor: pointer;
+    font-weight: 500;
+    min-width: 52px;
+    min-height: 40px;
+    box-sizing: border-box;
 }
 
 nav.navbar .nav-controls .nav-buttons .login {
     background-color: #E60023;
     color: #fff;
+    padding: 7px;
+}
+
+nav.navbar .nav-controls .nav-buttons .signup {
+    padding: 7px;
 }
 
 section {
@@ -96,7 +108,8 @@ section {
 }
 
 section.images {
-padding-top: 60px;
+    background-color: #FFCA00;
+    padding-top: 60px;
 }
 
 section.hero {
